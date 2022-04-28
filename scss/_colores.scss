@@ -1,0 +1,55 @@
+        /* Fondo Sinopsis */
+.body_sinopsis {
+    background: $background-color;
+    background: $background-grad;
+}
+        /* Fondo Personajes */
+.body_personajes {
+    background: $background-color;
+    background: $background-grad;
+}
+        /* Fondo Galeria */
+.body_galeria {
+    background: $fondo-galeria;
+    background: $gradiente-galeria;
+}
+        /* Fondo Contacto */
+.body_contacto {
+    background: $background-color;
+    background: $background-grad;
+}
+        /* Footer universal */
+#footer {
+    background-color: $negro;
+    color: $blanco;
+}
+        /* Navegacion universal */
+#nav {
+    background-color: $fondo-nav
+}
+        /* INDEX STYLES */
+        /* Layout */
+.li {
+    -webkit-text-stroke: 3px rgb(105, 0, 0);
+    color: $fondo-nav
+}
+        /* Descripcion (centro derecha) */
+.descripcion_p {
+    -webkit-text-stroke: 0.5px $blanco;
+}
+        /* Navegacion (botones) */
+.liButtom {
+    color: rgb(184, 78, 8);
+    -webkit-text-stroke: 0.5px $negro;
+}
+        /* PERSONAJES STYLES */
+        /* Layout */
+        /* Titulo Seccion Personajes */
+.titulo {
+    -webkit-text-stroke: 0.5px rgb(168, 168, 168);
+}
+        /* CONTACTO STYLES */
+        /* Layout */
+.tituloContacto {
+    -webkit-text-stroke: 0.5px $blanco;
+}

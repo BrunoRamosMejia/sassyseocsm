@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria - ChainsawMan</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+    <meta name="description" content="Pagina de Contacto de la pagina del Manga de ChainsawMan">
+    <meta name="keywords" content="CONTACTO, INFORMACION, CORREO, CHAINSAWMAN, MANGA, ANIME">
+</head>
+<body class="body_contacto">
+    <div class="gridContacto">
+        <div id="nav">                              <!--Barra de Navegacion-->
+            <ul class="ul_nav">
+                <li class="ul_navli"><a href="galeria.html">Galeria</a>></li>
+                <li class="ul_navli"><a href="personajes.html">Personajes</a></li>
+                <li class="ul_navli"><a href="sinopsis.html">Sinopsis</a></li>
+                <li class="ul_navli"><a href="../index.html">Pagina Principal</a></li>
+            </ul>
+            <img class="imgNav" src="../imagenes/csmlogo.png" alt="ChainsawMan Logo">
+        </div>
+        <div class="tituloContacto">
+            <h1>Contactenos!</h1>
+        </div>
+        <div class="formulario">
+            <form action="" method="post">
+                <fieldset class="formulario_legend">
+                    <legend>Formulario</legend>
+                    <table border="0" cellpadding="8" cellspacing="0">
+                        <tr>
+                            <td>Nombre</td>
+                            <td><input type="text" value="Nombre"></td>
+                        </tr>
+                        <tr>
+                            <td>Email</td>
+                            <td><input type="email" value="Correo Electronico"></td>
+                        </tr>
+                        <tr>
+                            <td>Estado Civil</td>
+                            <td><select name="estado civil" id="estado civil">
+                                    <option value="">Seleccione su Estado Civil</option>
+                                    <option value="soltero">Soltero/a</option>
+                                    <option value="casado">Casado/a</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>¿Desea Recibir el Newsletter?</td>
+                            <td>
+                                <input type="checkbox" id="newsletter" name="newsletter" value="newsletter">Si deseo Recibir</imput>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><textarea placeholder="Dejenos un Comentario"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><input type="submit" value="Enviar"><input type="reset" value="Limpiar el Formulario"></td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </form>
+        </div>
+        <div id="footer">                            <!--Footer -->
+            Chainsawman - Tatsuki Fujimoto || Desafio Hecho por Bruno Ramos Mejia
+        </div>
+    </div>
+</body>
+</html>

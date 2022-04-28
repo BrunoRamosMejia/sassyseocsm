@@ -1,0 +1,17 @@
+    // Variables //
+$background-color: rgb(255,206,131);
+$background-grad: linear-gradient(90deg, rgba(255,206,131,1) 0%, rgba(255,235,205,1) 15%, rgba(255,235,205,1) 85%, rgba(255,206,131,1) 100%);
+$fondo-galeria: rgb(67,67,67);
+$gradiente-galeria: linear-gradient(0deg, rgba(67,67,67,1) 0%, rgba(0,0,0,1) 50%);
+$negro: rgb(0, 0, 0);
+$blanco: rgb(255, 255, 255);
+$fondo-nav: rgb(248, 176, 20);
+$boogaloo: 'Boogaloo', cursive;
+$bungee:'Bungee', cursive;
+$grape-nuts: 'Grape Nuts', cursive;
+
+@import "estructura";
+
+@import "tipografia";
+
+@import "colores";

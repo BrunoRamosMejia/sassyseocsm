@@ -1,0 +1,403 @@
+/* Fondo index */
+.body_index {                                                      
+    background-image: url(../imagenes/fondomain.jpg) ;
+    background-position: center;
+    background-size: 1559px 762px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+        /* Footer universal */
+#footer {
+    display: grid;
+    grid-area: footer; 
+    text-align: center;
+    padding: 20px;
+}
+        /* Navegacion universal */
+#nav {
+    display: grid;
+    grid-area: nav;
+    border-radius: 15px;
+}
+
+.ul_nav {
+    display: flex;
+    list-style: none;
+    flex-flow: row-reverse wrap;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0px;
+}
+
+.ul_navli {
+    padding-inline: 10px;
+}
+
+.imgNav {
+    position: absolute;
+    width: 180px;
+    top: 9px;
+    left: 13px;
+}
+        /* INDEX STYLES */
+        /* Layout */
+.gridIndex {
+    display: grid;
+    grid-template-columns: 38% 62%;
+    grid-template-rows: 6fr 6fr 1fr;
+    grid-template-areas: 
+    "portada descripcion"
+    "portada botones"
+    "footer footer";
+    height: 743px;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    border: 0px;
+    margin: 8px;
+}
+        /* Portada (centro izquierda) */
+.portada {
+    display: grid;
+    grid-area: portada;
+}
+
+.ulPortada {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+
+.li {
+    justify-content: space-between;
+    animation-name: aparicion;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+    animation-delay: 0s;   
+}
+
+.liImg {
+    height: 460px;
+    transition: height 1s;
+    animation-name: aparicion;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+    animation-delay: 0s;
+        &:hover {
+            height: 480px;
+        }
+}
+        /* Descripcion (centro derecha) */
+#descripcionIndex {
+    display: grid;
+    grid-area: descripcion;
+    text-align: center;
+    align-items: center;
+    padding: 25px;
+}
+
+.descripcion_p {
+    animation-name: aparicion;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+    animation-delay: 0s;
+}
+        /* Navegacion (botones) */
+#navIndex {
+    display: grid;
+    grid-area: botones;
+    animation-name: aparicion;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+    animation-delay: 0s;   
+}
+
+.ulNav {
+    display: flex;
+    flex-flow: row wrap;
+    list-style: none;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    margin: 0px;
+    padding: 0px;
+    height: 300.500px;
+}
+
+.ul_li {
+    padding: 12px;
+}
+
+@mixin sizes($width, $height) {
+    height: $height;
+    width: $width;
+}
+
+.liButtom {
+    @include sizes(250px, 80px);
+    transition: width 1s, height 1s;
+        &:hover {
+            width: 270px;
+            height: 100px;    
+        }
+}
+        /* Animacion de Aparicion para el index */
+@keyframes aparicion {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+        /* SINOPSIS Styles */
+        /* Layout */
+.gridSinopsis {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 7% 1fr 10%;
+    grid-template-areas: 
+    "nav"
+    "sinopsis"
+    "footer";
+    height: 743px;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    border: 0px;
+    margin: 0px;
+}
+        /* Sinopsis contenido */
+.div_sinopsis {
+    display: grid;
+    grid-area: sinopsis;
+    text-align: center;
+}
+
+.div_flex {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-flow: column wrap;
+}
+
+.div_sinopsis-escenario {
+    width: 750px;
+}
+
+.sinopsisTitulo {
+    margin: 10px;
+}
+        /* Fixed Link wiki */
+.div_pochita {
+    position: fixed;
+    bottom: 2px;
+    right: 20px;
+    width: 90px;
+        &:hover {
+            animation-name: sacudir;
+            animation-iteration-count: 1;
+            animation-duration: 1s;
+            animation-delay: 0s;     
+        }
+}
+
+@keyframes sacudir {
+    0% {transform: rotate(0deg);}
+    10% {transform: rotate(-10deg);}
+    30% {transform: rotate(10deg);}
+    50% {transform: rotate(-10deg);}
+    70% {transform: rotate(10deg);}
+    90% {transform: rotate(-10deg);}
+    100% {transform: rotate(0deg);}
+}
+        /* PERSONAJES STYLES */
+        /* Layout */
+.gridPersonajes {
+    display: grid;
+    grid-template-rows: 3.8% 8% 1fr 1fr 1fr 5.5%;
+    grid-template-columns: 30% 70%;
+    grid-template-areas: 
+    "nav nav"
+    "titulo titulo"
+    "imgDenji descDenji"
+    "imgPower descPower"
+    "imgAki descAki"
+    "footer footer";
+}
+                /* Titulo Seccion Personajes */
+.titulo {
+    display: grid;
+    grid-area: titulo;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
+
+.titulo_p {
+    margin: 5px;
+}
+        /* Imagenes */
+.imgDenji {
+    display: grid;
+    grid-area: imgDenji;
+    justify-items: center;
+    align-items: center;
+}
+
+.imgPower {
+    display: grid;
+    grid-area: imgPower;
+    justify-items: center;
+    align-items: center;
+}
+
+.imgAki {
+    display: grid;
+    grid-area: imgAki;
+    justify-items: center;
+    align-items: center;
+}
+        /* Descripciones */
+.descDenji {
+    display: grid;
+    grid-area: descDenji;
+    text-align: center;
+    align-items:center;
+}
+
+.descPower {
+    display: grid;
+    grid-area: descPower;
+    text-align: center;
+    align-items:center;
+}
+
+.descAki {
+    display: grid;
+    grid-area: descAki;
+    text-align: center;
+    align-items:center;
+}
+
+.imgWidth {
+    width: 240px;
+    border: 2px solid black;
+}
+
+.imgWidth2 {
+    width: 180px;
+    border: 2px solid black;
+}
+        /* GALERIA STYLES */
+        /* Galeria Layout */
+.gridGaleria {
+    display: grid;
+    grid-template-rows: 5% 320px 320px 320px 8%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "nav nav nav"
+    "media1 media2 media3"
+    "media4 media5 media6"
+    "media7 media8 media9"
+    "footer footer footer";
+    grid-gap: 5px;
+}
+        /* Galeria Items */
+.media1 {
+    justify-self: center;
+    align-self: center;
+}
+
+.media2 {
+    justify-self: center;
+    align-self: center;
+}
+
+.media3 {
+    justify-self: center;
+    align-self: center;
+}
+
+.media4 {
+    justify-self: center;
+    align-self: center;
+}
+
+.media5 {
+    justify-self: center;
+    align-self: center;
+}
+
+.media6 {
+    justify-self: center;
+    align-self: center;
+}
+
+.media7 {
+    justify-self: center;
+    align-self: center;
+}
+
+.media8 {
+    justify-self: center;
+    align-self: center;
+}
+
+.media9 {
+    justify-self: center;
+    align-self: center;
+}
+
+.galeria1 {
+    width: 100%;
+}
+
+.galeria2 {
+    width: 500px;
+}
+
+.galeria3 {
+    width: 200px;
+}
+
+.galeria4 {
+    width: 500px;
+}
+
+.galeria5 {
+    width: 250px;
+}
+
+.galeria8 {
+    width: 520px;
+}
+
+.galeria9 {
+    width: 440px;
+}
+        /* CONTACTO STYLES */
+        /* Layout */
+.gridContacto {
+    display: grid;
+    grid-template-rows: 7% 160px 450px 10%;
+    grid-template-columns: 100%;
+    grid-template-areas: 
+    "nav"
+    "tituloContacto"
+    "formulario"
+    "footer";
+    grid-gap: 5px;
+}       
+
+.tituloContacto {
+    display: grid;
+    grid-area: tituloContacto;
+    align-self: center;
+    justify-self: center;
+}
+
+.formulario {
+    display: grid;
+    grid-area: formulario;
+    align-self: center;
+    justify-self: center;
+}
